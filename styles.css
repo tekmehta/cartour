@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-bottom: 60px;
+}
+/* company_details */
+.company_details{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.company_details h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+}
+.company_details .rate .rate_number{
+    background-color: rgb(11, 212, 11);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.company_details .rate .rate_text{
+    color: #959595;
+}
+.company_details .address_text .Response{
+    color: #736b6b;
+    font-family: 'Courier New', Courier, monospace;
+}
+.company_details .company_experience{
+    color: #4f3434;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* loadering */
+    @keyframes spinner-animation {
+      0%, 100% { opacity: 0; transform: scale(1); }
+      12.5% { opacity: 1; transform: scale(1.5); }
+      25% { opacity: 0; transform: scale(1); }
+    }
+    .spinner-grow {
+      width: 2rem;
+      height: 2rem;
+      margin: 10px;
+      display: inline-block;
+      /* animation: spinner-animation 3s infinite; */
+    }
+    .spinner-grow:nth-child(1) { animation-delay: 0s; }
+    .spinner-grow:nth-child(2) { animation-delay: 1s; }
+    .spinner-grow:nth-child(3) { animation-delay: 2s; }
+    .spinner-grow:nth-child(4) { animation-delay: 3s; }
+    .spinner-grow:nth-child(5) { animation-delay: 4s; }
+    .spinner-grow:nth-child(6) { animation-delay: 5s; }
+    .spinner-grow:nth-child(7) { animation-delay: 6s; }
+    .spinner-grow:nth-child(8) { animation-delay: 7s; }
+/* tab manu bar */
+.tabs {
+    display: flex;
+    cursor: pointer;
+    border-bottom: 2px solid #ccc;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #454646;
+    border-right: 1px solid #ccc;
+    border-bottom: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tab:hover {
+    background-color: #000000;
+    color: white;
+}
+.content {
+    display: none;
+    padding: 5px;
+}
+.content:target {
+    display: block;
+}
+#overview-content:target, #reviews-content:target, #services-content:target, #photos-content:target {
+    display: block;
+}
+/* review content */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .tab-menu {
+    display: flex;
+    justify-content: space-around;
+    background: #f5f5f5;
+    padding: 10px;
+  }
+  .tab-menu div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .tab-menu div.active {
+    border-bottom: 3px solid #007bff;
+  }
+  .reviews {
+    padding: 20px;
+  }
+  .review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  .review:last-child {
+    border-bottom: none;
+  }
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .review-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .review-header .name {
+    font-weight: bold;
+  }
+  .review-header .rating {
+    background: #4caf50;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-left: auto;
+  }
+  .review-body {
+    margin-bottom: 10px;
+  }
+  .review-body img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  .review-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .review-footer div {
+    cursor: pointer;
+  }
+  /* services-content */
+  #services-content{
+    margin: 5px;
+  }
+.contents #services-content p span{
+  color: rgb(227, 20, 20);
+  padding-left: 15px;
+  margin-right: 20px;
+}
+
+
+/* photo content */
+.contents #photos-content img {
+    max-width: calc(33.33% - 10px);
+  }
+  /* footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+.footer button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.footer button a{
+    text-decoration: none;
+    color: white;
+}
+.footer button:hover {
+    background-color: #0056b3;
+}

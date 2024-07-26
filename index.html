@@ -3,81 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabbed Navigation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding-bottom: 60px; /* space for footer */
-        }
-        .tabs {
-            display: flex;
-            cursor: pointer;
-            border-bottom: 1px solid #ccc;
-            background-color: #fff;
-            position: sticky;
-            top: 0;
-        }
-        .tab {
-            flex: 1;
-            padding: 10px;
-            text-align: center;
-            text-decoration: none;
-            color: #000;
-            border: 1px solid #ccc;
-            border-bottom: none;
-        }
-        .tab:hover {
-            background-color: #f0f0f0;
-        }
-        .content {
-            display: none;
-            padding: 20px;
-        }
-        .content:target {
-            display: block;
-        }
-        /* Default tab */
-        #overview-content:target,
-        #reviews-content:target,
-        #services-content:target,
-        #photos-content:target {
-            display: block;
-        }
-        .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 10px 0;
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-        }
-        .footer button {
-            margin: 0 10px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        .footer button a{
-            text-decoration: none;
-            color: white;
-        }
-        .footer button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Raja Tours</title>
+    <style></style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <div class="company_details">
+        <h2>Raja Tours And Travels</h2>
+        <div class="rate">
+            <span class="rate_number">4.2</span>
+            <span class="rate_text">38 ratings</span>
+        </div>
+        <p class="address_text">Raxaul, East-champaran</p>
+        <p class="company_experience"><b>Tour and Rental</b> <span>15 Years in Businesss</span></p>
+        <span class="Response"><b>Response Time</b> : Within a Minute</span>
+    </div>
+    <div class="loadering">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-success" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-info" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-dark" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
     <div class="tabs">
-        <a href="#overview-content" class="tab">Overview</a>
-        <a href="#reviews-content" class="tab">Reviews</a>
-        <a href="#services-content" class="tab">Services</a>
-        <a href="#photos-content" class="tab">Photos</a>
+        <a href="#overview-content" class="tab"><b>Overview</b></a>
+        <a href="#reviews-content" class="tab"><b>Reviews</b></a>
+        <a href="#services-content" class="tab"><b>Services</b></a>
+        <a href="#photos-content" class="tab"><b>Photos</b></a>
     </div>
 
     <div class="contents">
@@ -87,25 +58,127 @@
         </div>
         <div id="reviews-content" class="content">
             <h2>Reviews</h2>
-            <p>Reviews for New Gupta Tour & Travel in Raxaul, East Champaran</p>
+            <p>Reviews for Raja Tours And Travels in Raxaul, East Champaran</p>
             <p>Start your review: [Star ratings]</p>
+            <div class="company_details">
+                <div class="rate">
+                    <span class="rate_number">4.2</span>
+                    <span class="rate_text">38 ratings</span>
+                </div>
+            </div>
+            <h2>User Reviews</h2>
+            <div class="reviews">
+                <div class="review">
+                  <div class="review-header">
+                    <img src="img/1 (10).jpg" alt="User">
+                    <div class="name">Golden Gupta</div>
+                    <div class="rating">4.5★</div>
+                  </div>
+                  <div class="review-body">
+                    Very nice service Raja tours
+                    <div>
+                      <img src="img/1 (6).jpg" alt="Review Image">
+                      <img src="img/1 (7).jpg" alt="Review Image">
+                    </div>
+                  </div>
+                  <div class="review-footer">
+                    <div>👍 Helpful</div>
+                    <div>💬 Comment</div>
+                    <div>🔗 Share</div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="review-header">
+                    <img src="img/1 (9).jpg" alt="User">
+                    <div class="name">GOUTAM BISTA</div>
+                    <div class="rating" style="background: #f44336;">0.5★</div>
+                  </div>
+                  <div class="review-body">
+                    I have booked a Scorpio for 8 days from Raxaul. It was very impressive
+                  </div>
+                  <div class="review-footer">
+                    <div>👍 Helpful (1)</div>
+                    <div>💬 Comment</div>
+                    <div>🔗 Share</div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="review-header">
+                    <img src="img/1 (4).jpeg" alt="User">
+                    <div class="name">Mukesh Kumar</div>
+                    <div class="rating">4.0★</div>
+                  </div>
+                  <div class="review-body">
+                    Great Support
+                  </div>
+                  <div class="review-footer">
+                    <div>👍 Helpful (1)</div>
+                    <div>💬 Comment</div>
+                    <div>🔗 Share</div>
+                  </div>
+                </div>
+              </div>
         </div>
         <div id="services-content" class="content">
             <h2>Services</h2>
-            <p>Booking Services: Flight Booking, Bus Booking, Railway Booking, Hotel Booking</p>
-            <p>Packages Offered: Domestic</p>
+            <p><b>Booking Services:</b></p>
+            <p><span>✅</span>Flight Booking</p>
+            <p><span>✅</span>Bus Booking</p>
+            <p><span>✅</span>Railway Booking</p>
+            <p><span>✅</span>Hotel Booking</p>
+            <p><b>Packages Offered :</b> <span>✅</span>Domestic</p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Question 1
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">answer 1</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Question 2
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Answer 2</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    what is Tour
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Roaming outside like mad dog in the search of mad female dog is called tour and both mad dog went in room is called super enjoyment tour </div>
+                </div>
+              </div>
+            </div>
         </div>
         <div id="photos-content" class="content">
             <h2>Photos</h2>
-            <p>[Photo gallery]</p>
-        </div>
+            <a href="img/1 (2).jpeg"><img src="img/1 (2).jpeg" alt="1"></a>
+            <a href="img/1 (3).jpeg"><img src="img/1 (3).jpeg" alt="1"></a>
+            <a href="img/1 (4).jpeg"><img src="img/1 (4).jpeg" alt="1"></a>
+            <a href="img/1 (5).jpeg"><img src="img/1 (5).jpeg" alt="1"></a>
+            <a href="img/1 (6).jpg"><img src="img/1 (6).jpg" alt="1"></a>
+            <a href="img/1 (7).jpg"><img src="img/1 (7).jpg" alt="1"></a>
+            <a href="img/1 (8).jpg"><img src="img/1 (8).jpg" alt="1"></a>
+            <a href="img/1 (9).jpg"><img src="img/1 (9).jpg" alt="9"></a>
+            <a href="img/1 (10).jpg"><img src="img/1 (10).jpg" alt="1"></a>
+            <a href="img/1 (1).jpeg"><img src="img/1 (1).jpeg" alt="1"></a>
+        </div>    
     </div>
-
     <div class="footer">
-        <button><a href="https://wa.me/+9779824765952?text=I%20Love%20You%20Darling%20Hidan%20na%20Jhari%20Ma" target="_blank">Chat</a></button>
-        <button><a href="tel:+918709984022">Call 1</a></button>
-        <button><a href="tel:+9123295896">Call 2</a></button>
-        <button>Enquire Now</button>
+        <button><a href="https://wa.me/+9779824765952?text=I%20Love%20You%20Darling%20Hidan%20na%20Jhari%20Ma" target="_blank">💬 Chat</a></button>
+        <button><a href="tel:+918709984022">📞 Call 1</a></button>
+        <button><a href="tel:+9123295896">📞 Call 2</a></button>
+        <!-- <button>Enquire Now</button> -->
     </div>
 </body>
 </html>
